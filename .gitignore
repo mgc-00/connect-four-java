@@ -1,0 +1,21 @@
+# Compiled Java files
+*.class
+
+# BlueJ project files
+*.ctxt
+package.bluej
+
+# Packaged Java artifacts
+*.jar
+
+# Save files / serialized data
+*.sav
+*.ser
+
+# IDE/editor files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
