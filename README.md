@@ -3,71 +3,49 @@ DATE: 2.3 07/02/2025
 AUTHOR: MGC https://github.com/mgc-00/mgc-git-repo
 
 
-Connect Four Game
+# Connect Four Java
 
-A Java-based Connect Four game with a Graphical User Interface (GUI), designed to run primarily in BlueJ as well as standard Java environments. The game supports player vs. computer mode, move undoing, game saving/loading, and an intuitive visual interface.
-Features
+## Overview
+A Java implementation of Connect Four with both a graphical interface and a text-based version. The project includes core gameplay logic, a computer opponent, undo support, and save/load functionality.
 
-    Interactive GUI with a 6x7 grid layout
-    Player vs. Computer mode with AI opponent
-    Move undo feature
-    Game state saving and loading
-    Custom styling with bordered grid design
-    Optional Text based game included
-    Observer pattern to update the UI dynamically
- 
+## Features
+- Graphical Connect Four interface
+- Text-based version for command-line play
+- Player vs. computer gameplay
+- Undo move support
+- Save and load game state
+- Win condition detection
+- Object-oriented Java project structure
 
-Installation & Setup
+## Tech Stack
+- Java
+- Swing / Java GUI components
 
-    Ensure Java is installed (JDK 8 or higher recommended). 
+## Project Purpose
+This project was built to practice object-oriented programming, game logic, GUI development, and state management in Java.
 
-    ******Java Development Kit is essential!!!!******
+## Requirements
+- Java JDK 8 or higher
 
-    https://sourceforge.net/projects/portableapps/files/JDK/jdk-8u411-windows-x64.exe/download
+## How to Run
 
-    *BlueJ users: Open the project folder in BlueJ and compile the classes.
-    Run through "ConnectFourGUI" (or ConnectFourUI for the Text based game)
+### Compile
+From the project directory, run:
 
-    **Standard Java users, add the file contents to a location on your machine. 
-    Run CMD and set the directory.
+```bash
+javac *.java
+Run the GUI version
+bash
+java ConnectFourGUI
+Run the text-based version
+bash
+java ConnectFourUI
 
-    eg: C:\Windows\System32>cd c:/
+Notes
+This repository is focused on the source code for the project. Compiled files, IDE-specific files, saved game files, and other generated artifacts have been removed to keep the repository clean and maintainable.
 
-    c:\>cd ConnectFour Game (Java-BlueJ)
-
-    Compile and run using-
-
-    javac *.java
-
-    Once successfully compiled, run the games either as (Text based or GUI based):
-
-    java ConnectFourUI
-
-    java ConnectFourGUI
-
-
-    The game launches in CMD to play as text based or in a GUI window where you can start playing immediately.
-
-    ***To run as an executable JAR program, make sure everything is compiled and run the JAR file: ConnectFourGUI
-
-    If there are any issues with this, DELETE the JAR file and enter in your CMD to create a new JAR:
-
-    jar cfm ConnectFourGUI.jar ConnectFourGUI.txt *.class
-
-
-
-Troubleshooting
-
-    GUI not displaying? Ensure Swing components are being run on the Event Dispatch Thread (EDT).
-    Game not responding? Restart and check console errors for details. Also, exit and restart CMD is needed.
-    BlueJ users: Make sure all classes are compiled before execution.
-
-    Issues with Javac in CMD not working? Follow the steps here to edit your System Environment Variables (found halfway down the page):
-    
-    https://stackoverflow.com/questions/7709041/javac-is-not-recognized-as-an-internal-or-external-command-operable-program-or
-
-Contributions
-
-Pull requests and issue reports are welcome! Feel free to fork and enhance the project.
-
-Have fun!! Thank you ^^ 
+Future Improvements
+Improve computer opponent strategy
+Refine GUI layout and styling
+Add difficulty levels
+Add automated tests
